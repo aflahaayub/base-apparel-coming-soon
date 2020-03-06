@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="stylescnd.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+ 
+ <div class="content">
+    <section id="mainContent ">
+
+      <div class="row">
+        <div class="col-lg-6 pt-5">
+
+          <div class="head-content col-lg-4">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          <div class="pt-5 d-sm-block d-lg-none img-container">
+          <img src="images/hero-mobile.jpg" alt="imageGirl">
+          </div>
+
+          <div class="col-lg-8 order-md-2 order-lg-1 pr-0 pl-0 padding justify-content-center">
+
+
+            <h1><span class="lightFont">WE'RE</span> COMING SOON</h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+            <form class="needs-validation" novalidate>
+              <div class="input-group mb-3 pt-4">
+                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required>
+                <button class="btn shadowButton bg-white-rounded" type="submit" id="button-addon2">
+                  <img src="images/icon-arrow.svg" alt="button logo">
+                </button>
+                <div class="invalid-feedback">
+                  Please provide a valid email
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+    </form>
+            
+        <div class="col-sm-0 col-lg-6 pr-0 flex-reverse-row d-flex">
+          <img src="images/hero-desktop.jpg" alt="imageGirl" class="img-girl">
+        </div>
+
+      </div>
+    </section>
+</div>
+
+  <footer>
+    <p class="attribution pt-2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aflaha Ayub</a>.
+    </p>
+  </footer>
+
+  <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
